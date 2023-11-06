@@ -72,20 +72,6 @@
         <p>Phone Order Service</p>
         </td>
         <td width="141">
-        <p>ساخت کلاس سرویس سفارش تلفنی</p>
-        </td>
-        <td width="292">
-        <p>پیاده سازی یک تابع online Order Register از واسط با بدنه‌ی خالی</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="64">
-        <p><strong>۴</strong></p>
-        </td>
-        <td width="198">
-        <p>Phone Order Service</p>
-        </td>
-        <td width="141">
         <p>افزودن تابع پرداخت حضوری</p>
         </td>
         <td width="292">
@@ -94,7 +80,7 @@
     </tr>
     <tr>
         <td width="64">
-        <p><strong>۵</strong></p>
+        <p><strong>۴</strong></p>
         </td>
         <td width="198">
         <p>Phone Order Service</p>
@@ -108,7 +94,7 @@
     </tr>
     <tr>
         <td width="64">
-        <p><strong>۶</strong></p>
+        <p><strong>۵</strong></p>
         </td>
         <td width="198">
         <p>Order Service</p>
@@ -122,7 +108,7 @@
     </tr>
     <tr>
         <td width="64">
-        <p><strong>۷</strong></p>
+        <p><strong>۶</strong></p>
         </td>
         <td width="198">
         <p>Order Service</p>
@@ -136,7 +122,7 @@
     </tr>
     <tr>
         <td width="64">
-        <p><strong>۸</strong></p>
+        <p><strong>۷</strong></p>
         </td>
         <td width="198">
         <p>Online Order Service</p>
@@ -150,7 +136,7 @@
     </tr>
     <tr>
         <td width="64">
-        <p><strong>۹</strong></p>
+        <p><strong>۸</strong></p>
         </td>
         <td width="198">
         <p>OnSite Order Service</p>
@@ -164,7 +150,7 @@
     </tr>
     <tr>
         <td width="64">
-        <p><strong>۱۰</strong></p>
+        <p><strong>۹</strong></p>
         </td>
         <td width="198">
         <p>Phone Order Service</p>
@@ -173,7 +159,21 @@
         <p>افزودن تابع ثبت سفارش تلفنی</p>
         </td>
         <td width="292">
-        <p>افزودن یک تابع void با عنوان phone Order Register که درون آن خالی است.</p>
+        <p>افزودن یک تابع void با عنوان phone Order Register که درون آن پر است.</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="64">
+        <p><strong>۱۰</strong></p>
+        </td>
+        <td width="198">
+        <p>Online Order Service</p>
+        </td>
+        <td width="141">
+        <p>افزودن تابع پرداخت تلفنی</p>
+        </td>
+        <td width="292">
+        <p>افزودن یک تابع void با عنوان phone Order Payment که درون آن خالی است.</p>
         </td>
     </tr>
     <tr>
@@ -181,7 +181,7 @@
         <p><strong>۱۱</strong></p>
         </td>
         <td width="198">
-        <p>Online Order Service</p>
+        <p>OnSite Order Service</p>
         </td>
         <td width="141">
         <p>افزودن تابع پرداخت تلفنی</p>
@@ -195,32 +195,18 @@
         <p><strong>۱۲</strong></p>
         </td>
         <td width="198">
-        <p>OnSite Order Service</p>
-        </td>
-        <td width="141">
-        <p>افزودن تابع پرداخت تلفنی</p>
-        </td>
-        <td width="292">
-        <p>افزودن یک تابع void با عنوان phone Order Payment که درون آن خالی است.</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="64">
-        <p><strong>۱۳</strong></p>
-        </td>
-        <td width="198">
         <p>Phone Order Service</p>
         </td>
         <td width="141">
         <p>افزودن تابع  پرداخت</p>
         </td>
         <td width="292">
-        <p>افزودن یک تابع void با عنوان phone Order Payment که درون آن خالی است.</p>
+        <p>افزودن یک تابع void با عنوان phone Order Payment که درون آن پر است.</p>
         </td>
     </tr>
     <tr>
         <td width="64">
-        <p><strong>۱۴</strong></p>
+        <p><strong>۱۳</strong></p>
         </td>
         <td width="198">
         <p>Main</p>
@@ -234,7 +220,7 @@
     </tr>
     <tr>
         <td width="64">
-        <p><strong>۱۵</strong></p>
+        <p><strong>۱۴</strong></p>
         </td>
         <td width="198">
         <p>Main</p>
@@ -248,7 +234,7 @@
     </tr>
     <tr>
         <td width="64">
-        <p><strong>۱۶</strong></p>
+        <p><strong>۱۵</strong></p>
         </td>
         <td width="198">
         <p>Main</p>
@@ -263,7 +249,7 @@
 </tbody>
 </table>
 
-مجموع تعداد تغییرات: ۱۶
+مجموع تعداد تغییرات: ۱۵
 
 ### گام دو : تحلیل و وارسی برنامه از منظر تحقق و یا عدم تحقق اصول SOLID
 
@@ -452,3 +438,11 @@
 </tr>
 </tbody>
 </table>
+
+### گام ۳: اصلاح موارد نقض
+موارد اشاره شده برای رفع نقض ها بر روی کد اعمال شده و در پوشه Step_3_With_SOLID موجود می باشد
+### گام ۴: بررسی مجدد تغییرات مورد نیاز
+1. در صورت اعمال تغییرات در جهت رعایت اصول SOLID، تنها تغییرات با شماره های 1و9و13و14و15 نیازمند به پیاده سازی اند و تمامی دیگر تغییرات اضافی خواهند بود.
+1. در نهایت 5 تغییر صورت خواهد پذیرفت.
+### گام ۵: جمع بندی
+رعایت این اصول باعث انعطاف پذیر و توسعه پذیر شدن کد ما شد بدین صورت که پس از اعمال تغییرات می توانیم آیتم های دیگر به جز غذا را نیز به سفارش خود اضافه کنیم بدون آنکه قسمت های دیگر کد نیازمند تغییرات بزرگی باشند زیرا وابستگی ها به حد زیادی کم شده اند و برنامه تا میزان قابل توجهی به maintainability رسیده است.
