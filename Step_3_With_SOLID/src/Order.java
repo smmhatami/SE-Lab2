@@ -1,9 +1,9 @@
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-public class Order {
+public class  Order {
     String customerName;
-    ArrayList<Food> foods = new ArrayList<>();
+    ArrayList<OrderItem> items = new ArrayList<>();
     LocalDateTime orderDate= LocalDateTime.now();
 
     public Order(String customerName){
@@ -11,19 +11,19 @@ public class Order {
     }
 
     public void addItem(Food food){
-        this.foods.add(food);
+        this.items.add(food);
     }
 
     public int getTotalPrice(){
-        int price= this.foods.stream().mapToInt(food -> food.price).sum();
+        int price= this.items.stream().mapToInt(food -> food.getPrice()).sum();
         return price;
     }
 
     @Override
     public String toString() {
         String orders ="";
-        for (Food food:this.foods) {
-            orders+= food.foodName + " -> " + food.price+"\n";
+        for (OrderItem food:this.items) {
+            orders+= food.getItemName() + " -> " + food.getPrice()+"\n";
         }
         return "Customer : " + customerName + "\nOrders are : \n" + orders + "\nTotal Price : " + this.getTotalPrice();
     }

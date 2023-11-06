@@ -1,4 +1,6 @@
-public class Food {
+import PaymentServices.OrderService;
+
+public class Food implements OrderItem {
     String foodName;
     int price;
     int quantity =1;
@@ -16,11 +18,13 @@ public class Food {
         this.price = price;
     }
 
+    @Override
     public int getPrice() {
         return price;
     }
 
-    public String getFoodName() {
+    @Override
+    public String getItemName() {
         return foodName;
     }
 }
